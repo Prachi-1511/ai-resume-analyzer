@@ -1,23 +1,21 @@
-<<<<<<< HEAD
 # AI-Powered Resume Screening & Candidate Ranking System
 
-An end-to-end resume screening system that parses resumes, extracts skills and experience, and ranks candidates against a given job description using NLP and similarity scoring.
+## Overview
+This project implements an end-to-end AI-based resume screening system that simulates real-world hiring workflows.
+It automatically parses resumes, extracts skills and experience, and ranks candidates against a given job description using NLP-based similarity scoring.
 
-This project simulates real-world hiring workflows used in enterprise recruitment platforms.
-
----
+The system is designed to reflect how modern recruitment platforms assist recruiters in efficient candidate shortlisting.
 
 ## Features
-- Multi-resume upload and automated ranking
-- Resume parsing using NLP and regex
+- Upload and analyze multiple resumes
+- Resume parsing using NLP and regex-based extraction
 - Skill extraction and skill gap analysis
-- Resume–JD similarity using TF-IDF and cosine similarity
+- Resume–Job Description similarity using **TF-IDF and cosine similarity**
 - Weighted scoring system with recruiter-style verdicts
-- Interactive web interface built with Streamlit
-
----
+- Interactive web interface built using **Streamlit**
 
 ## Scoring Logic
+Each candidate is scored out of **100** using weighted components:
 
 | Component | Weight |
 |---------|--------|
@@ -25,42 +23,29 @@ This project simulates real-world hiring workflows used in enterprise recruitmen
 | Resume–JD Similarity | 30% |
 | Experience Indicator | 20% |
 
-Final score is capped at **100%** and mapped to:
+Final verdicts:
 - **Strong Fit**
 - **Partial Fit**
 - **Weak Fit**
 
----
+## Tech Stack
+Python, spaCy (NLP), Regex, TF-IDF & Cosine Similarity, Streamlit, pdfplumber, scikit-learn
 
-## Project Architecture
+## System Workflow
+
 Resume PDF
-↓
+    ↓
 Text Extraction
-↓
+    ↓
 Skill & Experience Extraction
-↓
+    ↓
 Job Description Processing
-↓
+    ↓
 Similarity & Weighted Scoring
-↓
+    ↓
 Candidate Ranking
 
-## Tech Stack
-- Python
-- spaCy (NLP)
-- Regex
-- TF-IDF & Cosine Similarity
-- Streamlit
-- pdfplumber
-- scikit-learn
-
 ## Installation & Run
-
-```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 streamlit run app.py
-=======
-# ai-resume-analyzer
-AI-powered resume screening and candidate ranking system using NLP
->>>>>>> b7df0be10c5712503dfeb65ffd9da7dcf7489146
