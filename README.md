@@ -46,6 +46,7 @@ Similarity & Weighted Scoring
 Candidate Ranking
 
 ## Installation & Run
+```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 streamlit run app.py
