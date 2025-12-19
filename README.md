@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI-Powered Resume Screening & Candidate Ranking System
 
 An end-to-end resume screening system that parses resumes, extracts skills and experience, and ranks candidates against a given job description using NLP and similarity scoring.
@@ -59,3 +60,7 @@ Candidate Ranking
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 streamlit run app.py
+=======
+# ai-resume-analyzer
+AI-powered resume screening and candidate ranking system using NLP
+>>>>>>> b7df0be10c5712503dfeb65ffd9da7dcf7489146
